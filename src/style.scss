@@ -1,0 +1,44 @@
+.sortable-block {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 20px;
+
+    &__item {
+        border: 1px solid #ccc;
+    }
+}
+
+.block-editor__container {
+
+    .sortable-block-container {
+
+        .sortable-block {
+            width: 100%;
+        }
+
+        .button-drag-item {
+            color: #aaa;
+
+            &:hover {
+                color: black;
+            }
+        }
+
+        .button-remove-item {
+            color: #aaa;
+
+            &:hover {
+                color: black;
+            }
+        }
+
+        .button-add-item {
+            width: 200px;
+            display: block;
+            margin: 30px auto;
+        }
+    }
+}
